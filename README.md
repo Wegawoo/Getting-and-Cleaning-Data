@@ -3,7 +3,7 @@ Course Project
 
 Explains how scripts work and and how they are connected.
 
-The output file is: https://github.com/Wegawoo/Getting-and-Cleaning-Data/blob/master/tidy_data.csv
+The output file is: https://github.com/Wegawoo/Getting-and-Cleaning-Data/blob/master/tidy_data.txt
 
 The script to process the files is: https://github.com/Wegawoo/Getting-and-Cleaning-Data/blob/master/run_analysis
 This generates the above output file.
