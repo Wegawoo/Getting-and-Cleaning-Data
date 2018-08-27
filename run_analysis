@@ -1,9 +1,9 @@
-#load file from internet and save to drive
+#load file from internet and save to drive. Skip if obtaining from here.
 
 fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileURL,destfile="C:\\Users\\XXX\\Downloads\\dataset.zip")
 
-#read files from drive
+#read files from drive. These are files downloaded from here or URL.
 
 x_train <- read.table("C:\\Users\\XXX\\Downloads\\dataset\\UCI HAR Dataset\\train\\X_train.txt",stringsAsFactors = FALSE)
 y_train <- read.table("C:\\Users\\XXX\\Downloads\\dataset\\UCI HAR Dataset\\train\\y_train.txt",stringsAsFactors = FALSE)
@@ -57,3 +57,6 @@ colnames(m_1) <- sub("Acc","accelerometer",names(m_1))
 library(dplyr)
 
 tidy_data <- m_1 %>% group_by(Subject,Activity) %>% summarise_all(mean)
+
+#write csv file with data
+write.csv(tidy_data,file="C:\\Users\\XXX\\Downloads\\dataset\\UCI HAR Dataset\\tidy_data.csv")
