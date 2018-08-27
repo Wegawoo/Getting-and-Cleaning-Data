@@ -58,5 +58,5 @@ library(dplyr)
 
 tidy_data <- m_1 %>% group_by(Subject,Activity) %>% summarise_all(mean)
 
-#write csv file with data
-write.csv(tidy_data,file="C:\\Users\\XXX\\Downloads\\dataset\\UCI HAR Dataset\\tidy_data.csv")
+#write table file with data
+write.table(tidy_data,file="C:\\Users\\XXX\\Downloads\\dataset\\UCI HAR Dataset\\tidy_data.csv",row.name=FALSE)
