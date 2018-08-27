@@ -28,5 +28,5 @@ The file identifies columns starting with "f" and replaces with the word "freq" 
 
 The final step is to load dplyr, and create a new matrix called "tidy_data" which uses the group_by function on the Subject and Activity columns to group the values in the other columns by them, and then uses the summarise_all function to apply the mean to the other column.
 
-The resulting matrix is written to your drive using write.csv, and loaded here: https://github.com/Wegawoo/Getting-and-Cleaning-Data/blob/master/tidy_data.csv
+The resulting matrix is written to your drive using write.table, and loaded here: https://github.com/Wegawoo/Getting-and-Cleaning-Data/blob/master/tidy_data.txt
 
